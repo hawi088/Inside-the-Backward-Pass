@@ -1,4 +1,4 @@
-# Gradienr – From Hand‑Calculated Forward Pass to a Tiny NumPy Engine
+# Inside the Backward Pass – From Hand‑Calculated Forward Pass to a Tiny NumPy Engine
 
 ## Overview
 Gradient is a teaching‑oriented project that walks through the full life‑cycle of a minimal neural network built from pure NumPy. It demonstrates how a hand‑calculated forward and backward pass (Phase 1) can be reproduced exactly by a small, modular engine (Phase 2) and provides a suite of visualisations and benchmarks.
