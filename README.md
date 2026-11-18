@@ -79,13 +79,13 @@ The project is organized into a series of scripts that illustrate different conc
    ```bash
    python derivative_visualizer.py
    ```
-   *Shows intuitive numerical vs. analytical derivatives for each activation function.*
+   *Shows visualization for derevative, partial derevative, gradient and gradient decent*
 
 6. **3‑b‑1‑b illustration suite** – `generate_3b1b_suite.py`
    ```bash
    python generate_3b1b_suite.py
    ```
-   *Creates the animation suite that ties the forward‑pass story together.*
+   *Creates the animation suite that ties the forward‑pass and backward-pass*
 
 7. **Loss landscape** – `loss_landscape.py`
    ```bash
