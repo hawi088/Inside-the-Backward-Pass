@@ -55,7 +55,7 @@ gradient/
 The project is organized into a series of scripts that illustrate different concepts. Follow this order to reproduce the full story:
 1. **Generate the dataset** – `dataset/two_moons.py `
    ```bash
-   python optimizer_benchmark.py
+   python dataset/two_moons.py
    ```
    *Generates the two moon dataset.*
 2. **Linear model failure demo** – `linear_model.py`
