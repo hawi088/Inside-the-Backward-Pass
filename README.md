@@ -79,5 +79,58 @@ Key functions in `engine.py`:
 
 All visual outputs are stored under `exports/` and share a dark‑background style for consistency.
 
+
+## Guided Execution Flow
+
+The project is organized into a series of scripts that illustrate different concepts. Follow this order to reproduce the full story:
+
+1. **Phase 2 – Gradient checker**
+   ```bash
+   python checker.py  # (if you have a helper script; otherwise run the engine verification step)
+   ```
+   *Validates that the analytical gradients of the modular engine match the finite‑difference baseline.*
+
+2. **Gradient‑check proof** – `gradient_checker_proof.py`
+   ```bash
+   python gradient_checker_proof.py
+   ```
+   *Runs a rigorous symmetric finite‑difference check for every parameter and prints a verdict.*
+
+3. **Derivative visualizer** – `derivative_visualizer.py`
+   ```bash
+   python derivative_visualizer.py
+   ```
+   *Shows intuitive numerical vs. analytical derivatives for each activation function.*
+
+4. **3‑b‑1‑b illustration suite** – `generate_3b1b_suite.py`
+   ```bash
+   python generate_3b1b_suite.py
+   ```
+   *Creates the animation suite that ties the forward‑pass story together.*
+
+5. **Linear model failure demo** – `linear_model.py`
+   ```bash
+   python linear_model.py
+   ```
+   *Demonstrates why a simple linear model fails to classify the two‑moons dataset.*
+
+6. **Loss landscape** – `loss_landscape.py`
+   ```bash
+   python loss_landscape.py
+   ```
+   *Visualises the 2‑D loss surface of the tiny network by sweeping the output‑layer weights.*
+
+7. **Activation dynamics** – `module5_activation_dynamics.py`
+   ```bash
+   python module5_activation_dynamics.py
+   ```
+   *Shows how different activation functions affect the forward‑pass output and gradients.*
+
+8. **Optimizer benchmark** – `optimizer_benchmark.py`
+   ```bash
+   python optimizer_benchmark.py
+   ```
+   *Compares SGD, SGD + Momentum, and Adam on the same tiny network.*
+
 ## License
 This project is released under the MIT License. See `LICENSE` for details.
